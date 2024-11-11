@@ -20,7 +20,7 @@ const Main = () => {
           <span className="text-green-500"> following and follower </span> list
         </h2>
         <p
-          className="flex text-gray-800 underline cursor-pointer justify-center"
+          className="flex text-gray-800 text-lg underline cursor-pointer justify-center hover:text-blue-500"
           onClick={scrollToInstructions}
         >
           Don&apos;t know how to download the file?

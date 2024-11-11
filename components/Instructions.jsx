@@ -45,7 +45,7 @@ const Instructions = () => {
         ))}
       </ol>
       <p
-        className="flex text-gray-800 underline cursor-pointer justify-center pt-6"
+        className="flex text-gray-800 underline cursor-pointer justify-center pt-6 hover:text-blue-500"
         onClick={scrollToMain}
       >
         I have downloaded the file!

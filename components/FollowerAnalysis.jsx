@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import JSZip from "jszip";
+import { AiOutlineUpload } from "react-icons/ai";
 
 export default function FollowerAnalysis() {
   const [followers, setFollowers] = useState([]);
@@ -73,12 +74,32 @@ export default function FollowerAnalysis() {
 
   return (
     <div className="flex flex-col items-center justify-center p-4">
-      <input
-        type="file"
-        accept=".zip"
-        onChange={handleFileUpload}
-        className="mb-4 p-2 border border-gray-300"
-      />
+      <div className="flex flex-col items-center p-10 bg-green-500 rounded-2xl shadow-lg border border-gray-200">
+        {/* Custom Upload Button */}
+        <label
+          htmlFor="fileUpload"
+          className="flex items-center justify-center w-60 h-14 px-6 py-3 text-xl font-semibold text-white bg-green-300/65 rounded-full shadow-md cursor-pointer hover:shadow-lg border-white hover:border-black border-2"
+        >
+          <AiOutlineUpload className="mr-2 text-3xl font-semibold text-black" />
+          Upload ZIP File
+        </label>
+
+        <input
+          id="fileUpload"
+          type="file"
+          accept=".zip"
+          onChange={handleFileUpload}
+          className="hidden"
+        />
+
+        {/* Description Text */}
+        <p className="mt-4 text-gray-900 text-center font-semibold text-lg">
+          Choose a ZIP file with your followers and following data.
+        </p>
+
+        {/* Error Message */}
+        {error && <p className="text-red-500 mt-4">{error}</p>}
+      </div>
 
       {error && <p className="text-red-500">{error}</p>}
 
