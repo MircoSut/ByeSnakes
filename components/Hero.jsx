@@ -11,12 +11,12 @@ const Hero = () => {
   };
   return (
     <header className="rounded-lg border-2 border-gray-200 bg-gray-50 shadow-lg m-4 p-12 text-black">
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row justify-center md:gap-20">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="font-bold text-4xl p-2">
+          <h1 className="font-bold text-4xl p-2 md:text-6xl">
             Simplify <span className="text-green-500">Instagram</span>
           </h1>
-          <p className="pt-2 pb-6 text-lg">
+          <p className="pt-2 pb-6 text-lg md:text-2xl">
             🐍Easily catch <span className="text-green-400">snakes</span> that
             don't follow you back🐍
           </p>

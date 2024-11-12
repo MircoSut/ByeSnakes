@@ -37,7 +37,7 @@ const Instructions = () => {
         ].map((instruction, index) => (
           <li
             key={index}
-            className="flex items-start text-gray-600 hover:text-gray-800 transition-all"
+            className="flex items-start text-gray-600 hover:text-gray-800 transition-all text-lg"
           >
             <FaCheckCircle className="text-green-400 mr-2 mt-1" />
             {instruction}

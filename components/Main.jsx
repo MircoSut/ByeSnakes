@@ -15,7 +15,7 @@ const Main = () => {
       className="flex flex-col items-center justify-center rounded-lg border-2 border-gray-200 bg-gray-50 shadow-lg m-4 p-6 text-black"
     >
       <div className="p-4">
-        <h2 className="text-2xl font-bold">
+        <h2 className="text-3xl font-bold">
           Upload your{" "}
           <span className="text-green-500"> following and follower </span> list
         </h2>
