@@ -15,7 +15,7 @@ const About = () => {
       <h2 className="text-2xl font-bold text-green-500">About</h2>
       <p className="p-4 text-lg">
         I was tired of checking manually who was not following me back, and
-        annoied that instagram did not helps in that. So I built this mini app!
+        annoied that instagram doesn't help in that. So I built this mini app!
         xD
       </p>
       <button

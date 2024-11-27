@@ -20,18 +20,21 @@ const Instructions = () => {
           <span className="text-green-400">following and follower </span>list
         </h2>
       </div>
-      <ol className="flex flex-col items-start list-decimal ml-6 space-y-3">
+      <video controls preload="none">
+        <source src="/rightone.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <ol className="flex flex-col items-start list-decimal ml-6 space-y-3 py-6">
         {[
-          "Open Instagram",
-          "Go to settings",
-          "Accounts Center",
-          "Your information and permissions",
-          "Download your information",
-          "Download or transfer information",
-          "Select instagram account",
-          "Some of your information",
+          "Go to your profile",
+          "Your activity",
+          "Scroll down to dowload your information",
+          "Click download or transfer information",
+          "Choose your instagram account",
+          "Click some of your information",
           "Select only: Followers and Following",
           "Download to device",
+          "Choose all time for date",
           "Create files",
           "Wait for the download to be available",
         ].map((instruction, index) => (
