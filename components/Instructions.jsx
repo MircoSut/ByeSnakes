@@ -20,7 +20,7 @@ const Instructions = () => {
           <span className="text-green-400">following and follower </span>list
         </h2>
       </div>
-      <video controls preload="none">
+      <video width="320" height="240" controls preload="none">
         <source src="/rightone.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
