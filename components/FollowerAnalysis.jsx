@@ -96,6 +96,7 @@ export default function FollowerAnalysis() {
         <p className="mt-4 text-gray-900 text-center font-semibold text-lg">
           Choose a ZIP file with your followers and following data.
         </p>
+        <p>For Android hold the file and click select on the top right</p>
 
         {/* Error Message */}
         {error && <p className="text-red-500 mt-4">{error}</p>}
