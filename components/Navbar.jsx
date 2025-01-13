@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
-  const scrollToAbout = () => {
-    const instructionsSection = document.getElementById("about");
+  const scrollToFAQ = () => {
+    const instructionsSection = document.getElementById("faq");
     if (instructionsSection) {
       instructionsSection.scrollIntoView({ behavior: "smooth" });
     }
@@ -22,9 +22,9 @@ const Navbar = () => {
         <ul>
           <li
             className="text-lg hover:font-bold cursor-pointer"
-            onClick={scrollToAbout}
+            onClick={scrollToFAQ}
           >
-            About
+            FAQ
           </li>
         </ul>
       </div>

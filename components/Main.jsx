@@ -1,4 +1,5 @@
 "use client";
+import FAQListItems from "./FAQListItems";
 import FollowerAnalysis from "./FollowerAnalysis";
 
 const Main = () => {
@@ -10,9 +11,9 @@ const Main = () => {
   };
 
   return (
-    <div
+    <section
       id="main"
-      className="flex flex-col items-center justify-center rounded-lg border-2 border-gray-200 bg-gray-50 shadow-lg m-4 p-6 text-black"
+      className="max-w-4xl mx-auto flex flex-col items-center justify-center rounded-lg text-black md:mt-12"
     >
       <div className="p-4">
         <h2 className="text-3xl font-bold">
@@ -27,7 +28,40 @@ const Main = () => {
         </p>
       </div>
       <FollowerAnalysis />
-    </div>
+
+      {/* FAQ */}
+      <section className="bg-base-200" id="faq">
+        <div className="py-32 px-8 max-w-3xl mx-auto">
+          <p className="text-sm uppercase font-medium text-center text-primary mb-4">
+            FAQ
+          </p>
+          <h2 className="text-3xl text-green-500 lg:text-4xl font-extrabold mb-12 text-center">
+            Frequently Asked Question
+          </h2>
+          <ul className="max-w-lg mx-auto">
+            {[
+              {
+                question: "What does this app do exactly?",
+                answer:
+                  "Given a zip file about your followers and following list, this app will only compare the two list and retrieve who is not following you back(Snakes🐍).",
+              },
+              {
+                question: "Why have you made this app?",
+                answer:
+                  "I was tired of checking manually who was not following me back, and annoied that instagram doesn't help in that. So I built this mini app! 😆",
+              },
+              {
+                question: "Will this app store my data?",
+                answer:
+                  "No this app will only compare a list from a zip file. In future Im planning to add a login feature that will store your latest list file and then show who recently unfollowed you.",
+              },
+            ].map((qa) => (
+              <FAQListItems key={qa.question} qa={qa} />
+            ))}
+          </ul>
+        </div>
+      </section>
+    </section>
   );
 };
 

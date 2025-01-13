@@ -10,9 +10,9 @@ const Instructions = () => {
   };
 
   return (
-    <div
+    <section
       id="instructions"
-      className="flex flex-col items-center justify-center rounded-lg border-2 border-gray-200 bg-gray-50 shadow-lg m-4 p-6"
+      className="flex flex-col items-center justify-center m-4 p-6"
     >
       <div className="p-4 text-center">
         <h2 className="text-2xl font-bold text-gray-700">
@@ -20,10 +20,10 @@ const Instructions = () => {
           <span className="text-green-400">following and follower </span>list
         </h2>
       </div>
-      <video width="320" height="240" controls preload="none">
+      {/* <video width="320" height="240" controls preload="none">
         <source src="/rightone.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
       <ol className="flex flex-col items-start list-decimal ml-6 space-y-3 py-6">
         {[
           "Go to your profile",
@@ -38,10 +38,7 @@ const Instructions = () => {
           "Create files",
           "Wait for the download to be available",
         ].map((instruction, index) => (
-          <li
-            key={index}
-            className="flex items-start text-gray-600 hover:text-gray-800 transition-all text-lg"
-          >
+          <li key={index} className="flex items-start text-black text-lg">
             <FaCheckCircle className="text-green-400 mr-2 mt-1" />
             {instruction}
           </li>
@@ -53,7 +50,7 @@ const Instructions = () => {
       >
         I have downloaded the file!
       </p>
-    </div>
+    </section>
   );
 };
 
