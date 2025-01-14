@@ -13,15 +13,15 @@ const Main = () => {
   return (
     <section
       id="main"
-      className="max-w-4xl mx-auto flex flex-col items-center justify-center rounded-lg text-black md:mt-12"
+      className="max-w-4xl mx-auto flex flex-col items-center justify-center rounded-lg text-black dark:text-white md:mt-12"
     >
       <div className="p-4">
-        <h2 className="text-3xl font-bold">
+        <h2 className="text-3xl font-bold text-center">
           Upload your{" "}
           <span className="text-green-500"> following and follower </span> list
         </h2>
         <p
-          className="flex text-gray-800 text-lg underline cursor-pointer justify-center hover:text-blue-500"
+          className="flex text-gray-800 dark:text-white text-lg underline cursor-pointer justify-center hover:text-blue-500"
           onClick={scrollToInstructions}
         >
           Don&apos;t know how to download the file?
@@ -30,7 +30,7 @@ const Main = () => {
       <FollowerAnalysis />
 
       {/* FAQ */}
-      <section className="bg-base-200" id="faq">
+      <section className="bg-base-200 dark:text-white" id="faq">
         <div className="py-32 px-8 max-w-3xl mx-auto">
           <p className="text-sm uppercase font-medium text-center text-primary mb-4">
             FAQ

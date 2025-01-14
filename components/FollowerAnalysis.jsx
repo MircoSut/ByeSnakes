@@ -73,7 +73,7 @@ export default function FollowerAnalysis() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-12 px-4  pt-4 pb-12 md:pb-20">
+    <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-12 px-4  pt-4 pb-12 md:pb-20 dark:text-white">
       <div className="flex flex-col items-center rounded-2xl">
         {/* Custom Upload Button */}
         <label
@@ -93,7 +93,7 @@ export default function FollowerAnalysis() {
         />
 
         {/* Description Text */}
-        <p className="mt-4 text-gray-900 text-center font-semibold text-lg max-w-sm text-balance">
+        <p className="mt-4 text-gray-900 dark:text-white text-center font-semibold text-lg max-w-sm text-balance">
           Choose a ZIP file with your followers and following data.
         </p>
         <p className="text-center max-w-sm text-balance">
@@ -119,7 +119,7 @@ export default function FollowerAnalysis() {
         </div>
         <div className="flex flex-row justify-between items-start pt-4">
           <div className="pr-2">
-            <h3 className="text-lg font-semibold">
+            <h3 className="text-lg font-semibold dark:text-white">
               Followers ({followers.length})
             </h3>
             {/* <ul className="list-disc pl-4">
@@ -130,7 +130,7 @@ export default function FollowerAnalysis() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold">
+            <h3 className="text-lg font-semibold dark:text-white">
               Following ({following.length})
             </h3>
             {/* <ul className="list-disc pl-4">

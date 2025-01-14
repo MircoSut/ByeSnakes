@@ -15,7 +15,7 @@ const Instructions = () => {
       className="flex flex-col items-center justify-center m-4 p-6"
     >
       <div className="p-4 text-center">
-        <h2 className="text-2xl font-bold text-gray-700">
+        <h2 className="text-2xl font-bold text-gray-700 dark:text-white">
           Download your{" "}
           <span className="text-green-400">following and follower </span>list
         </h2>
@@ -38,14 +38,17 @@ const Instructions = () => {
           "Create files",
           "Wait for the download to be available",
         ].map((instruction, index) => (
-          <li key={index} className="flex items-start text-black text-lg">
+          <li
+            key={index}
+            className="flex items-start text-black dark:text-white text-lg"
+          >
             <FaCheckCircle className="text-green-400 mr-2 mt-1" />
             {instruction}
           </li>
         ))}
       </ol>
       <p
-        className="flex text-gray-800 underline cursor-pointer justify-center pt-6 hover:text-blue-500"
+        className="flex text-gray-800 dark:text-white underline cursor-pointer justify-center pt-6 hover:text-blue-500"
         onClick={scrollToMain}
       >
         I have downloaded the file!
