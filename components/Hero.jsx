@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 const Hero = () => {
   const scrollToMain = () => {
     const instructionsSection = document.getElementById("main");
