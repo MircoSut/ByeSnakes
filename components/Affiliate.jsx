@@ -4,13 +4,12 @@ const Affiliate = () => {
       <h2 className="text-2xl text-black dark:text-white font-bold">
         Want to build app like this?
       </h2>
-      <p>Check this course where I learned everything I need: </p>
       <div>
         <a
           href="https://codefa.st/?via=mirco"
           className="text-xl  text-green-500 hover:underline"
         >
-          https://codefa.st/?via=mirco
+          Check this course where I learned everything I need:
         </a>
       </div>
     </section>

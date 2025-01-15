@@ -16,7 +16,7 @@ const Main = () => {
       className="max-w-4xl mx-auto flex flex-col items-center justify-center rounded-lg text-black dark:text-white md:mt-12"
     >
       <div className="p-4">
-        <h2 className="text-3xl font-bold text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-center">
           Upload your{" "}
           <span className="text-green-500"> following and follower </span> list
         </h2>

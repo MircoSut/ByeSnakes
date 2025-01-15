@@ -73,8 +73,8 @@ export default function FollowerAnalysis() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-12 px-4  pt-4 pb-12 md:pb-20 dark:text-white">
-      <div className="flex flex-col items-center rounded-2xl">
+    <div className="flex flex-col mx-auto md:flex-row md:items-start  px-4  pt-4 pb-12 md:pb-20 dark:text-white">
+      <div className="flex flex-col w-full items-center rounded-2xl">
         {/* Custom Upload Button */}
         <label
           htmlFor="fileUpload"
@@ -106,7 +106,7 @@ export default function FollowerAnalysis() {
 
       {error && <p className="text-red-500">{error}</p>}
 
-      <div className="flex flex-col items-center justify-center text-black">
+      <div className="w-full flex flex-col items-center justify-center text-black">
         <div className="">
           <h3 className="text-2xl font-bold text-green-500">
             🐍Snakes🐍 ({nonRicambiati.length})
