@@ -113,7 +113,9 @@ export default function FollowerAnalysis() {
           </h3>
           <ul className="list-disc pl-8">
             {nonRicambiati.map((user, index) => (
-              <li key={index}>🐍{user}</li>
+              <li className="dark:text-white" key={index}>
+                🐍{user}
+              </li>
             ))}
           </ul>
         </div>
