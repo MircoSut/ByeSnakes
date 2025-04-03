@@ -87,7 +87,6 @@ export default function FollowerAnalysis() {
         <input
           id="fileUpload"
           type="file"
-          accept=".zip"
           onChange={handleFileUpload}
           className="hidden"
         />
